@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Jiahe Yu"
+  site-url: https://YOUR-USERNAME.github.io/jiahe-site/
   description: "Summer 2026 journal and learning log"
   navbar:
     left:
