@@ -1,0 +1,30 @@
+---
+title: "Project kickoff"
+date: 2026-08-19
+description: "First day of the family AI summer project"
+---
+
+## What I did
+
+Cloned the family repo and opened my Quarto site with `quarto preview`.
+
+## What I learned
+
+- **Markdown** is how I write; **Quarto** is how it becomes a website
+- AI tools work best when I describe clearly what I want
+
+## Tomorrow
+
+Pick a Quarto theme in `_quarto.yml` that feels like me.
+
+## Markdown practice
+
+Here's a table I made by hand:
+
+| Tool | Best for |
+|------|----------|
+| Cursor | Big edits, asking questions |
+| Copilot | Suggestions while typing |
+| Claude Code | Terminal scripts |
+
+> My rule: I write the journal; AI helps me polish — not invent my day.

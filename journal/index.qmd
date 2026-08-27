@@ -12,4 +12,6 @@ page-layout: full
 
 # Journal
 
-Document the summer — wins, bugs, and surprises.
+Summer learning log — one entry at a time.
+
+Add new entries as `.qmd` files in this folder. They show up here automatically.

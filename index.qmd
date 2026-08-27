@@ -1,0 +1,27 @@
+---
+title: "Jiahe Yu"
+subtitle: "16 · Summer 2026 · AI Learning Project"
+---
+
+## Hi, I'm Jiahe Yu
+
+This is my personal site — built from **markdown** files, not hand-written HTML.
+
+I'm learning:
+
+- How to write in [Markdown](https://github.com/Zhenglei-BCS/family-ai-summer-2026/blob/main/docs/markdown-basics.md)
+- How to build a site with [Quarto](https://quarto.org/docs/websites/)
+- How to use AI tools (Cursor, Copilot) without letting them do all the thinking
+- Optional later: rebuild this site with **Hugo** for a portfolio-style blog
+
+[Read my journal →](journal/index.qmd){.btn .btn-primary}
+
+## What I'm building
+
+A journal of my summer projects, experiments, and things I ship.
+
+## Quick links
+
+- [About me](about.qmd)
+- [First journal entry](journal/2026-08-19-first-entry.qmd)
+- [Family repo on GitHub](https://github.com/Zhenglei-BCS/family-ai-summer-2026)

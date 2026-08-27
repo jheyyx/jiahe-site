@@ -1,0 +1,11 @@
+/* Optional custom styles on top of Quarto theme */
+
+.hero-banner {
+  padding: 1rem 0;
+}
+
+blockquote {
+  border-left: 4px solid var(--bs-info);
+  padding-left: 1rem;
+  color: var(--bs-secondary);
+}
