@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Jiahe Yu</title>
+<link>https://jheyyx.github.io/jiahe-site/sites/jiahe-yu/journal/</link>
+<atom:link href="https://jheyyx.github.io/jiahe-site/sites/jiahe-yu/journal/index.xml" rel="self" type="application/rss+xml"/>
+<description>Summer 2026 journal and learning log</description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Wed, 26 Aug 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>I hate u</title>
+  <link>https://jheyyx.github.io/jiahe-site/sites/jiahe-yu/journal/2026-08-27-T.T.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="i-wanna-sleep" class="level2">
+<h2 class="anchored" data-anchor-id="i-wanna-sleep">I wanna sleep</h2>
+<p>I don’t want to do this. I don’t want to write this. I don’t want to be here. I don’t want to be alive. I don’t want to be me. I don’t want to be human. I don’t want to be anything. I just want to sleep. <strong>Jk I like myself</strong>. I like being alive. I like being human. I like being me. I just want to sleep. :p</p>
+</section>
+<section id="i-have-no-idea-what-to-write" class="level2">
+<h2 class="anchored" data-anchor-id="i-have-no-idea-what-to-write">I have no idea what to write</h2>
+<p>I donteu understandeu anythingeu. No understand. No no. No understanding</p>
+</section>
+<section id="no-understand" class="level2">
+<h2 class="anchored" data-anchor-id="no-understand">NO UNDERSTAND</h2>
+<p>python in da jupyter lab, blender donut lol, very ugly, i talented, very smart, very good, very nice, very cool, very awesome, very amazing, very incredible, very fantastic, very wonderful, very excellent, very superb, very outstanding, very remarkable, very extraordinary, very exceptional, very phenomenal, very magnificent, very splendid, very glorious, very brilliant, very dazzling, very radiant, very luminous, very shining, very gleaming. <strong>I am a genius</strong></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://jheyyx.github.io/jiahe-site/sites/jiahe-yu/journal/2026-08-27-T.T.html</guid>
+  <pubDate>Wed, 26 Aug 2026 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Project kickoff</title>
+  <link>https://jheyyx.github.io/jiahe-site/sites/jiahe-yu/journal/2026-08-19-first-entry.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="what-i-did" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-did">What I did</h2>
+<p>Cloned the family repo and opened my Quarto site with <code>quarto preview</code>.</p>
+</section>
+<section id="what-i-learned" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-learned">What I learned</h2>
+<ul>
+<li><strong>Markdown</strong> is how I write; <strong>Quarto</strong> is how it becomes a website</li>
+<li>AI tools work best when I describe clearly what I want</li>
+</ul>
+</section>
+<section id="tomorrow" class="level2">
+<h2 class="anchored" data-anchor-id="tomorrow">Tomorrow</h2>
+<p>Pick a Quarto theme in <code>_quarto.yml</code> that feels like me.</p>
+</section>
+<section id="markdown-practice" class="level2">
+<h2 class="anchored" data-anchor-id="markdown-practice">Markdown practice</h2>
+<p>Here’s a table I made by hand:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tool</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cursor</td>
+<td>Big edits, asking questions</td>
+</tr>
+<tr class="even">
+<td>Copilot</td>
+<td>Suggestions while typing</td>
+</tr>
+<tr class="odd">
+<td>Claude Code</td>
+<td>Terminal scripts</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p>My rule: I write the journal; AI helps me polish — not invent my day.</p>
+</blockquote>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://jheyyx.github.io/jiahe-site/sites/jiahe-yu/journal/2026-08-19-first-entry.html</guid>
+  <pubDate>Tue, 18 Aug 2026 22:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

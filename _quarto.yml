@@ -1,10 +1,13 @@
 project:
   type: website
   output-dir: _site
-
+  render:
+    - index.qmd
+    - about.qmd
+    - journal/**/*.qmd
 website:
   title: "Jiahe Yu"
-  site-url: https://YOUR-USERNAME.github.io/jiahe-site/
+  site-url: https://jheyyx.github.io/jiahe-site/
   description: "Summer 2026 journal and learning log"
   navbar:
     left:
@@ -16,7 +19,7 @@ website:
         text: Journal
     right:
       - icon: github
-        href: https://github.com/Zhenglei-BCS/family-ai-summer-2026
+        href: https://github.com/jheyyx/jiahe-site/
 
 format:
   html:
