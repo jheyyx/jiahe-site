@@ -34,12 +34,15 @@ page-layout: full
     <span class="project-card-kicker">Mini game</span>
     <span id="code-breaker-title" class="code-breaker-title">Code Breaker</span>
   </div>
-  <button id="code-breaker-close" class="code-breaker-close" type="button" aria-label="Close Code Breaker">X</button>
+  <div class="code-breaker-dialog-actions">
+    <button id="code-breaker-fullscreen" class="code-breaker-tool-button" type="button" aria-label="Enter fullscreen">[ ]</button>
+    <button id="code-breaker-close" class="code-breaker-close" type="button" aria-label="Close Code Breaker">X</button>
+  </div>
 </div>
 
-<p>Guess the secret code without being told which digits you got right. You have 10 attempts.</p>
+<p class="code-breaker-intro">Guess the secret code without being told which digits you got right. You have 10 attempts.</p>
 
-<div class="code-breaker">
+<div class="code-breaker-board">
 <form id="code-breaker-form" class="code-breaker-form">
   <label for="code-guess">Your guess
     <input id="code-guess" name="guess" type="text" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="0000" autocomplete="off" required>
@@ -49,12 +52,19 @@ page-layout: full
 
 <p id="code-breaker-status" class="code-breaker-status" role="status" aria-live="polite">You have 10 attempts.</p>
 
+<div class="code-breaker-scoreboard" aria-label="Guess scoreboard">
+  <div class="scoreboard-heading">Guess history</div>
+  <div class="scoreboard-legend">
+    <span><i class="score-peg score-peg-exact" aria-hidden="true"></i> Right position</span>
+    <span><i class="score-peg score-peg-partial" aria-hidden="true"></i> Wrong position</span>
+  </div>
+</div>
+
 <table class="code-breaker-table">
   <thead>
     <tr>
       <th scope="col">Guess</th>
-      <th scope="col">Right position</th>
-      <th scope="col">Wrong position</th>
+      <th scope="col">Scoreboard</th>
     </tr>
   </thead>
   <tbody id="code-breaker-history"></tbody>
@@ -69,6 +79,7 @@ page-layout: full
 (() => {
   const card = document.querySelector("#code-breaker-card");
   const dialog = document.querySelector("#code-breaker-dialog");
+  const fullscreen = document.querySelector("#code-breaker-fullscreen");
   const close = document.querySelector("#code-breaker-close");
   const form = document.querySelector("#code-breaker-form");
   const input = document.querySelector("#code-guess");
@@ -115,6 +126,47 @@ page-layout: full
     return { rightPosition, wrongPosition };
   }
 
+  function makeBall(digit) {
+    const ball = document.createElement("span");
+    ball.className = `digit-ball digit-ball-${digit}`;
+    ball.textContent = digit;
+    ball.setAttribute("aria-label", `digit ${digit}`);
+    return ball;
+  }
+
+  function makeScorePegs(score) {
+    const pegs = document.createElement("span");
+    pegs.className = "score-pegs";
+    pegs.setAttribute("aria-label", `${score.rightPosition} right position, ${score.wrongPosition} wrong position`);
+    const exactGroup = document.createElement("span");
+    exactGroup.className = "score-group";
+    exactGroup.setAttribute("aria-hidden", "true");
+    for (let index = 0; index < score.rightPosition; index += 1) {
+      const peg = document.createElement("i");
+      peg.className = "score-peg score-peg-exact";
+      exactGroup.append(peg);
+    }
+    const exactCount = document.createElement("strong");
+    exactCount.className = "score-count score-count-exact";
+    exactCount.textContent = score.rightPosition;
+    exactGroup.append(exactCount);
+
+    const partialGroup = document.createElement("span");
+    partialGroup.className = "score-group";
+    partialGroup.setAttribute("aria-hidden", "true");
+    for (let index = 0; index < score.wrongPosition; index += 1) {
+      const peg = document.createElement("i");
+      peg.className = "score-peg score-peg-partial";
+      partialGroup.append(peg);
+    }
+    const partialCount = document.createElement("strong");
+    partialCount.className = "score-count score-count-partial";
+    partialCount.textContent = score.wrongPosition;
+    partialGroup.append(partialCount);
+    pegs.append(exactGroup, partialGroup);
+    return pegs;
+  }
+
   function startGame() {
     secretCode = makeCode();
     attempts = 0;
@@ -134,6 +186,20 @@ page-layout: full
 
   close.addEventListener("click", () => dialog.close());
 
+  fullscreen.addEventListener("click", async () => {
+    if (document.fullscreenElement) {
+      await document.exitFullscreen();
+    } else if (dialog.requestFullscreen) {
+      await dialog.requestFullscreen();
+    }
+  });
+
+  document.addEventListener("fullscreenchange", () => {
+    const isFullscreen = document.fullscreenElement === dialog;
+    fullscreen.textContent = isFullscreen ? "[ ]" : "[ ]";
+    fullscreen.setAttribute("aria-label", isFullscreen ? "Exit fullscreen" : "Enter fullscreen");
+  });
+
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) dialog.close();
   });
@@ -152,7 +218,12 @@ page-layout: full
     attempts += 1;
     const score = scoreGuess(guess);
     const row = document.createElement("tr");
-    row.innerHTML = `<td>${guess}</td><td>${score.rightPosition}</td><td>${score.wrongPosition}</td>`;
+    const guessCell = document.createElement("td");
+    guessCell.className = "guess-balls";
+    Array.from(guess).forEach((digit) => guessCell.append(makeBall(digit)));
+    const scoreCell = document.createElement("td");
+    scoreCell.append(makeScorePegs(score));
+    row.append(guessCell, scoreCell);
     history.prepend(row);
 
     if (score.rightPosition === 4) {

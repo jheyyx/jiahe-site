@@ -25,11 +25,11 @@ blockquote {
   width: 100%;
   padding: 1.5rem;
   overflow: hidden;
-  color: inherit;
+  color: var(--bs-dark);
   text-align: left;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 2px solid var(--bs-primary);
   border-radius: 8px;
-  background: linear-gradient(145deg, rgba(20, 184, 166, 0.28), rgba(0, 0, 0, 0.28));
+  background: var(--bs-primary);
   transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
 
@@ -41,7 +41,7 @@ button.project-card {
 button.project-card:hover,
 button.project-card:focus-visible {
   transform: translateY(-4px);
-  border-color: var(--bs-info);
+  border-color: var(--bs-dark);
   box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.24);
 }
 
@@ -49,7 +49,7 @@ button.project-card:focus-visible {
   position: absolute;
   top: 0.75rem;
   right: 1rem;
-  color: rgba(255, 255, 255, 0.24);
+  color: rgba(0, 0, 0, 0.2);
   font-size: 3.75rem;
   font-weight: 800;
   line-height: 1;
@@ -66,7 +66,7 @@ button.project-card:focus-visible {
 
 .project-card-kicker {
   margin: 0;
-  color: var(--bs-info);
+  color: var(--bs-dark);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -80,16 +80,17 @@ button.project-card:focus-visible {
 
 .project-card-description {
   max-width: 25rem;
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--bs-dark);
 }
 
 .project-card-action {
-  color: var(--bs-info);
+  color: var(--bs-dark);
   font-weight: 700;
 }
 
 .project-card-coming-soon {
-  background: linear-gradient(145deg, rgba(255, 193, 7, 0.18), rgba(0, 0, 0, 0.28));
+  border-color: var(--bs-warning);
+  background: var(--bs-warning);
 }
 
 .code-breaker-dialog {
@@ -97,10 +98,10 @@ button.project-card:focus-visible {
   max-height: calc(100% - 2rem);
   padding: 1.5rem;
   overflow: auto;
-  color: var(--bs-body-color);
+  color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 8px;
-  background: var(--bs-dark);
+  background: #78c2ad;
 }
 
 .code-breaker-dialog::backdrop {
@@ -114,11 +115,21 @@ button.project-card:focus-visible {
   gap: 1rem;
 }
 
+.code-breaker-dialog-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .code-breaker-title {
   display: block;
   margin-top: 0.25rem;
   font-size: 1.5rem;
   font-weight: 700;
+  color: #fff;
+}
+
+.code-breaker-dialog .project-card-kicker {
+  color: #111;
 }
 
 .code-breaker-close {
@@ -132,12 +143,27 @@ button.project-card:focus-visible {
   cursor: pointer;
 }
 
-.code-breaker {
+.code-breaker-tool-button {
+  padding: 0.3rem 0.5rem;
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.code-breaker-intro {
+  color: #fff;
+}
+
+.code-breaker-board {
   margin: 1.5rem 0 0;
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 8px;
-  background: rgba(0, 0, 0, 0.18);
+  background: linear-gradient(145deg, #765037, #422f2b);
+  box-shadow: inset 0 0 0 5px rgba(32, 20, 17, 0.28), 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25);
 }
 
 .code-breaker-form {
@@ -159,16 +185,76 @@ button.project-card:focus-visible {
   font-size: 1.5rem;
   letter-spacing: 0.35rem;
   text-align: center;
+  border: 3px solid #2b1d1a;
+  border-radius: 4px;
+  background: #d8b58b;
+  color: #2b1d1a;
+  font-weight: 700;
+}
+
+.code-breaker-form label {
+  color: #f3dfb3;
+}
+
+.code-breaker-form .btn-primary {
+  border-color: #4b1720;
+  background: #641f2a;
+  color: #fff;
+}
+
+.code-breaker-form .btn-primary:hover,
+.code-breaker-form .btn-primary:focus-visible {
+  border-color: #351017;
+  background: #4b1720;
+  color: #fff;
 }
 
 .code-breaker-status {
   min-height: 1.5rem;
   margin: 1rem 0;
+  color: #fff3d1;
+}
+
+.code-breaker-scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  color: #fff3d1;
+}
+
+.scoreboard-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.scoreboard-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.7rem;
+}
+
+.scoreboard-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .code-breaker-table {
   width: 100%;
   margin-top: 1rem;
+  color: #fff3d1;
+  background: #4b3029;
+  border: 1px solid rgba(255, 243, 209, 0.2);
+}
+
+.code-breaker-table tbody,
+.code-breaker-table tbody tr,
+.code-breaker-table tbody td {
+  background: #56362c;
 }
 
 .code-breaker-table th,
@@ -178,7 +264,82 @@ button.project-card:focus-visible {
 }
 
 .code-breaker-table tbody tr + tr {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid rgba(255, 243, 209, 0.22);
+}
+
+.code-breaker-table thead {
+  background: #3b2421;
+}
+
+.guess-balls {
+  white-space: nowrap;
+}
+
+.digit-ball {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 0.15rem;
+  border: 2px solid rgba(255, 255, 255, 0.42);
+  border-radius: 50%;
+  box-shadow: inset -0.25rem -0.3rem 0.35rem rgba(0, 0, 0, 0.35), inset 0.25rem 0.2rem 0.3rem rgba(255, 255, 255, 0.5), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.35);
+  color: #fff;
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  vertical-align: middle;
+}
+
+.digit-ball-0 { background: #e5484d; }
+.digit-ball-1 { background: #f5a524; }
+.digit-ball-2 { background: #2ca58d; }
+.digit-ball-3 { background: #3478c9; }
+.digit-ball-4 { background: #8f55c7; }
+.digit-ball-5 { background: #e56b2f; }
+.digit-ball-6 { background: #d84187; }
+.digit-ball-7 { background: #5a9e54; }
+.digit-ball-8 { background: #535b68; }
+.digit-ball-9 { background: #c53d2f; }
+
+.score-pegs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  max-width: 6rem;
+  vertical-align: middle;
+}
+
+.score-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-right: 0.65rem;
+}
+
+.score-count {
+  min-width: 1.2rem;
+  color: #fff3d1;
+  font-size: 1rem;
+}
+
+.score-peg {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  box-shadow: inset -0.1rem -0.1rem 0.15rem rgba(0, 0, 0, 0.35), inset 0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.45);
+}
+
+.score-peg-exact { background: #f4e9d2; }
+.score-peg-partial { background: #1d2527; }
+
+.score-pegs:empty::after {
+  content: "-";
+  color: rgba(255, 243, 209, 0.65);
 }
 
 .code-breaker-new-game {
