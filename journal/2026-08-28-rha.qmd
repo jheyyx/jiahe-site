@@ -27,3 +27,33 @@ copilot give me suggest
 5. **Build-a-Website Puzzle**  
    Click items in the correct order: write Markdown, add CSS, render with Quarto, then deploy with GitHub Actions. Wrong choices reset the level.
 
+I made a game called "Code Breaker". I use HTML, CSS, and JavaScript to make the game. I also use Quarto to render the game into my website. The game is a mini game where you have to guess a secret four-digit code. You have 10 attempts to guess the code. The game will tell you how many digits are correct and in the right position. The game is similar to the classic game "Mastermind". 
+I actually didn't do anything. I just tell copilot what to do. Copilot do all the work. Thank you very much copilot. I love you copilot. I will make more games with copilot in the future.
+Copilot you da best. 
+
+## What I learned
+I learned that vs code is a good tool to write markdown. I learned that Quarto is a good tool to render markdown into a website. I learned that GitHub is a good tool to save my coding history, store my website and make it public. I learned that GitHub pages is a good tool to deploy my website to GitHub pages. I learned that GitHub actions is a good tool to publish my website. I learned that copilot is a good tool to help me make a game. I learned that copilot can do all the work for me. I learned that copilot is very smart and helpful. I learned that copilot can understand my instructions and generate code for me. I learned that copilot can save me time and effort. I learned that copilot can help me learn new things and improve my skills. I learned that copilot can make my life easier and more fun.
+
+I learned the following git commands:
+
+- **git add**: This command adds changes in your working directory to the staging area. It prepares the changes to be committed. For example, `git add .` adds all changes in the current directory and its subdirectories.
+
+- **git commit**: This command records the changes in the staging area to the repository. It creates a new commit with a message describing the changes. For example, `git commit -m "Add new feature"` creates a commit with the message "Add new feature".
+
+- **git push**: This command uploads the local repository content to a remote repository. It sends the committed changes to the remote server. For example, `git push origin main` pushes the changes from the local main branch to the remote main branch.
+
+- **git pull**: This command fetches and integrates changes from a remote repository into your local repository. It updates your local branch with the latest changes from the remote branch. For example, `git pull origin main` fetches and merges changes from the remote main branch into your local main branch.
+
+
+I learned the following Quarto commands:
+
+- **quarto preview**: This command starts a local web server and opens a preview of your Quarto project in your default web browser. It allows you to see how your website will look before publishing it. For example, running `quarto preview` in the terminal will generate a live preview of your site.
+
+
+I learned the following markdown syntax:
+
+- **Headers**: Use `#` for headers. The number of `#` symbols indicates the level of the header. For example, `# Header 1`, `## Header 2`, and `### Header 3`.
+
+- **Bold text**: Use `**` or `__` to make text bold. For example, `**bold**` or `__bold__` will render as bold.
+
+- **Italic text**: Use `*` or `_` to make text italic. For example, `*italic*` or `_italic_` will render as italic.
