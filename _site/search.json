@@ -1,138 +1,5 @@
 [
   {
-    "objectID": "journal/index.html",
-    "href": "journal/index.html",
-    "title": "Journal",
-    "section": "",
-    "text": "Journal\nSummer learning log — one entry at a time.\nAdd new entries as .qmd files in this folder. They show up here automatically.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nI hate u\n\n\nunnecessary\n\n\n\n\n\nAug 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nProject kickoff\n\n\nFirst day of the family AI summer project\n\n\n\n\n\nAug 19, 2026\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jiahe Yu",
-    "section": "",
-    "text": "This is my personal site — built from markdown files, not hand-written HTML.\nI’m learning:\n\nHow to write in Markdown\nHow to build a site with Quarto\nHow to use AI tools (Cursor, Copilot) without letting them do all the thinking\nOptional later: rebuild this site with Hugo for a portfolio-style blog\n\nRead my journal →"
-  },
-  {
-    "objectID": "index.html#hi-im-jiahe-yu",
-    "href": "index.html#hi-im-jiahe-yu",
-    "title": "Jiahe Yu",
-    "section": "",
-    "text": "This is my personal site — built from markdown files, not hand-written HTML.\nI’m learning:\n\nHow to write in Markdown\nHow to build a site with Quarto\nHow to use AI tools (Cursor, Copilot) without letting them do all the thinking\nOptional later: rebuild this site with Hugo for a portfolio-style blog\n\nRead my journal →"
-  },
-  {
-    "objectID": "index.html#what-im-building",
-    "href": "index.html#what-im-building",
-    "title": "Jiahe Yu",
-    "section": "What I’m building",
-    "text": "What I’m building\nA journal of my summer projects, experiments, and things I ship."
-  },
-  {
-    "objectID": "index.html#quick-links",
-    "href": "index.html#quick-links",
-    "title": "Jiahe Yu",
-    "section": "Quick links",
-    "text": "Quick links\n\nAbout me\nFirst journal entry\nFamily repo on GitHub"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "My name is Jiahe Yu. I love riding. I also enjoy reading and learning new things. I am curious about technology, science, and the world around me.\nIdeas to include:\n\nWhat grade you’re going into\nHobbies and things you’re curious about\nWhat you hope to learn this summer\nOne thing AI can’t do better than you (yet)"
-  },
-  {
-    "objectID": "about.html#about-me",
-    "href": "about.html#about-me",
-    "title": "About",
-    "section": "",
-    "text": "My name is Jiahe Yu. I love riding. I also enjoy reading and learning new things. I am curious about technology, science, and the world around me.\nIdeas to include:\n\nWhat grade you’re going into\nHobbies and things you’re curious about\nWhat you hope to learn this summer\nOne thing AI can’t do better than you (yet)"
-  },
-  {
-    "objectID": "about.html#how-this-site-works",
-    "href": "about.html#how-this-site-works",
-    "title": "About",
-    "section": "How this site works",
-    "text": "How this site works\nEvery page is a .qmd file — markdown with a small config block at the top. Quarto turns them into this website when I run quarto preview.\nThat means I focus on writing, not wrestling with HTML tags."
-  },
-  {
-    "objectID": "about.html#a-little-python",
-    "href": "about.html#a-little-python",
-    "title": "About",
-    "section": "A little Python",
-    "text": "A little Python\nThis code runs while Quarto builds the page:\n\n\nCode\nfavorite_numbers = [3, 8, 16, 42]\nprint(sum(favorite_numbers))\n\n\n69"
-  },
-  {
-    "objectID": "about.html#i-am-only-starting",
-    "href": "about.html#i-am-only-starting",
-    "title": "About",
-    "section": "I am only starting",
-    "text": "I am only starting\nI need to remove this because my mom wrote this section. I am only starting to learn how to use Quarto and GitHub. I will learn more about them as I go along."
-  },
-  {
-    "objectID": "journal/2026-08-19-first-entry.html",
-    "href": "journal/2026-08-19-first-entry.html",
-    "title": "Project kickoff",
-    "section": "",
-    "text": "Cloned the family repo and opened my Quarto site with quarto preview."
-  },
-  {
-    "objectID": "journal/2026-08-19-first-entry.html#what-i-did",
-    "href": "journal/2026-08-19-first-entry.html#what-i-did",
-    "title": "Project kickoff",
-    "section": "",
-    "text": "Cloned the family repo and opened my Quarto site with quarto preview."
-  },
-  {
-    "objectID": "journal/2026-08-19-first-entry.html#what-i-learned",
-    "href": "journal/2026-08-19-first-entry.html#what-i-learned",
-    "title": "Project kickoff",
-    "section": "What I learned",
-    "text": "What I learned\n\nMarkdown is how I write; Quarto is how it becomes a website\nAI tools work best when I describe clearly what I want"
-  },
-  {
-    "objectID": "journal/2026-08-19-first-entry.html#tomorrow",
-    "href": "journal/2026-08-19-first-entry.html#tomorrow",
-    "title": "Project kickoff",
-    "section": "Tomorrow",
-    "text": "Tomorrow\nPick a Quarto theme in _quarto.yml that feels like me."
-  },
-  {
-    "objectID": "journal/2026-08-19-first-entry.html#markdown-practice",
-    "href": "journal/2026-08-19-first-entry.html#markdown-practice",
-    "title": "Project kickoff",
-    "section": "Markdown practice",
-    "text": "Markdown practice\nHere’s a table I made by hand:\n\n\n\nTool\nBest for\n\n\n\n\nCursor\nBig edits, asking questions\n\n\nCopilot\nSuggestions while typing\n\n\nClaude Code\nTerminal scripts\n\n\n\n\nMy rule: I write the journal; AI helps me polish — not invent my day."
-  },
-  {
-    "objectID": "journal/2026-08-27-T.T.html",
-    "href": "journal/2026-08-27-T.T.html",
-    "title": "I hate u",
-    "section": "",
-    "text": "I don’t want to do this. I don’t want to write this. I don’t want to be here. I don’t want to be alive. I don’t want to be me. I don’t want to be human. I don’t want to be anything. I just want to sleep. Jk I like myself. I like being alive. I like being human. I like being me. I just want to sleep. :p"
-  },
-  {
-    "objectID": "journal/2026-08-27-T.T.html#i-wanna-sleep",
-    "href": "journal/2026-08-27-T.T.html#i-wanna-sleep",
-    "title": "I hate u",
-    "section": "",
-    "text": "I don’t want to do this. I don’t want to write this. I don’t want to be here. I don’t want to be alive. I don’t want to be me. I don’t want to be human. I don’t want to be anything. I just want to sleep. Jk I like myself. I like being alive. I like being human. I like being me. I just want to sleep. :p"
-  },
-  {
-    "objectID": "journal/2026-08-27-T.T.html#i-have-no-idea-what-to-write",
-    "href": "journal/2026-08-27-T.T.html#i-have-no-idea-what-to-write",
-    "title": "I hate u",
-    "section": "I have no idea what to write",
-    "text": "I have no idea what to write\nI donteu understandeu anythingeu. No understand. No no. No understanding"
-  },
-  {
-    "objectID": "journal/2026-08-27-T.T.html#no-understand",
-    "href": "journal/2026-08-27-T.T.html#no-understand",
-    "title": "I hate u",
-    "section": "NO UNDERSTAND",
-    "text": "NO UNDERSTAND\npython in da jupyter lab, blender donut lol, very ugly, i talented, very smart, very good, very nice, very cool, very awesome, very amazing, very incredible, very fantastic, very wonderful, very excellent, very superb, very outstanding, very remarkable, very extraordinary, very exceptional, very phenomenal, very magnificent, very splendid, very glorious, very brilliant, very dazzling, very radiant, very luminous, very shining, very gleaming. I am a genius"
-  },
-  {
     "objectID": "sites/jiahe-yu/journal/index.html",
     "href": "sites/jiahe-yu/journal/index.html",
     "title": "Journal",
@@ -173,6 +40,174 @@
     "title": "Project kickoff",
     "section": "Markdown practice",
     "text": "Markdown practice\nHere’s a table I made by hand:\n\n\n\nTool\nBest for\n\n\n\n\nCursor\nBig edits, asking questions\n\n\nCopilot\nSuggestions while typing\n\n\nClaude Code\nTerminal scripts\n\n\n\n\nMy rule: I write the journal; AI helps me polish — not invent my day."
+  },
+  {
+    "objectID": "journal/2026-08-28-rha.html",
+    "href": "journal/2026-08-28-rha.html",
+    "title": "funky",
+    "section": "",
+    "text": "I download vs code. vs code is used to write markdown. I also download the Quarto extension for vs code. Quarto is used to render markdown into a website. I also download the GitHub extension for vs code. GitHub is used to store my website and make it public. my website quarto website project is called “jiahe-site”. The GitHub pages extension is used to deploy my website to GitHub pages. I use github actions to publish my website."
+  },
+  {
+    "objectID": "journal/2026-08-28-rha.html#website",
+    "href": "journal/2026-08-28-rha.html#website",
+    "title": "funky",
+    "section": "",
+    "text": "I download vs code. vs code is used to write markdown. I also download the Quarto extension for vs code. Quarto is used to render markdown into a website. I also download the GitHub extension for vs code. GitHub is used to store my website and make it public. my website quarto website project is called “jiahe-site”. The GitHub pages extension is used to deploy my website to GitHub pages. I use github actions to publish my website."
+  },
+  {
+    "objectID": "journal/2026-08-28-rha.html#today",
+    "href": "journal/2026-08-28-rha.html#today",
+    "title": "funky",
+    "section": "today",
+    "text": "today\ni plan to make game hehe. mini game sry. i collaborate with copilot agent. but copilot do all the work. i just tell copilot what to do. but i actually don’t do anything. I dont know what game.\ncopilot give me suggest 1. Donut Catcher\nMove a plate left and right to catch falling donuts. Miss three and the game ends. Add faster falling speed and a high-score counter.\n\nCode Breaker\nGuess a secret four-digit code. The game tells you how many digits are correct and in the right position, like Mastermind.\nBike Trail Dash\nControl a cyclist, avoid rocks, collect water bottles, and survive as long as possible. The score increases with distance.\nMemory Flip\nFlip cards to match pairs of icons, such as bikes, books, laptops, and donuts. Add a timer and a move counter.\nBuild-a-Website Puzzle\nClick items in the correct order: write Markdown, add CSS, render with Quarto, then deploy with GitHub Actions. Wrong choices reset the level."
+  },
+  {
+    "objectID": "journal/2026-08-19-first-entry.html",
+    "href": "journal/2026-08-19-first-entry.html",
+    "title": "Project kickoff",
+    "section": "",
+    "text": "Cloned the family repo and opened my Quarto site with quarto preview."
+  },
+  {
+    "objectID": "journal/2026-08-19-first-entry.html#what-i-did",
+    "href": "journal/2026-08-19-first-entry.html#what-i-did",
+    "title": "Project kickoff",
+    "section": "",
+    "text": "Cloned the family repo and opened my Quarto site with quarto preview."
+  },
+  {
+    "objectID": "journal/2026-08-19-first-entry.html#what-i-learned",
+    "href": "journal/2026-08-19-first-entry.html#what-i-learned",
+    "title": "Project kickoff",
+    "section": "What I learned",
+    "text": "What I learned\n\nMarkdown is how I write; Quarto is how it becomes a website\nAI tools work best when I describe clearly what I want"
+  },
+  {
+    "objectID": "journal/2026-08-19-first-entry.html#tomorrow",
+    "href": "journal/2026-08-19-first-entry.html#tomorrow",
+    "title": "Project kickoff",
+    "section": "Tomorrow",
+    "text": "Tomorrow\nPick a Quarto theme in _quarto.yml that feels like me."
+  },
+  {
+    "objectID": "journal/2026-08-19-first-entry.html#markdown-practice",
+    "href": "journal/2026-08-19-first-entry.html#markdown-practice",
+    "title": "Project kickoff",
+    "section": "Markdown practice",
+    "text": "Markdown practice\nHere’s a table I made by hand:\n\n\n\nTool\nBest for\n\n\n\n\nCursor\nBig edits, asking questions\n\n\nCopilot\nSuggestions while typing\n\n\nClaude Code\nTerminal scripts\n\n\n\n\nMy rule: I write the journal; AI helps me polish — not invent my day."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "My name is Jiahe Yu. I love riding. I also enjoy reading and learning new things. I am curious about technology, science, and the world around me.\nIdeas to include:\n\nWhat grade you’re going into\nHobbies and things you’re curious about\nWhat you hope to learn this summer\nOne thing AI can’t do better than you (yet)"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About",
+    "section": "",
+    "text": "My name is Jiahe Yu. I love riding. I also enjoy reading and learning new things. I am curious about technology, science, and the world around me.\nIdeas to include:\n\nWhat grade you’re going into\nHobbies and things you’re curious about\nWhat you hope to learn this summer\nOne thing AI can’t do better than you (yet)"
+  },
+  {
+    "objectID": "about.html#how-this-site-works",
+    "href": "about.html#how-this-site-works",
+    "title": "About",
+    "section": "How this site works",
+    "text": "How this site works\nEvery page is a .qmd file — markdown with a small config block at the top. Quarto turns them into this website when I run quarto preview.\nThat means I focus on writing, not wrestling with HTML tags."
+  },
+  {
+    "objectID": "about.html#a-little-python",
+    "href": "about.html#a-little-python",
+    "title": "About",
+    "section": "A little Python",
+    "text": "A little Python\nThis code runs while Quarto builds the page:\n\n\nCode\nfavorite_numbers = [3, 8, 16, 42]\nprint(sum(favorite_numbers))\n\n\n69"
+  },
+  {
+    "objectID": "about.html#i-am-only-starting",
+    "href": "about.html#i-am-only-starting",
+    "title": "About",
+    "section": "I am only starting",
+    "text": "I am only starting\nI need to remove this because my mom wrote this section. I am only starting to learn how to use Quarto and GitHub. I will learn more about them as I go along."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jiahe Yu",
+    "section": "",
+    "text": "This is my personal site — built from markdown files, not hand-written HTML.\nI’m learning:\n\nHow to write in Markdown\nHow to build a site with Quarto\nHow to use AI tools (Cursor, Copilot) without letting them do all the thinking\nOptional later: rebuild this site with Hugo for a portfolio-style blog\n\nRead my journal →"
+  },
+  {
+    "objectID": "index.html#hi-im-jiahe-yu",
+    "href": "index.html#hi-im-jiahe-yu",
+    "title": "Jiahe Yu",
+    "section": "",
+    "text": "This is my personal site — built from markdown files, not hand-written HTML.\nI’m learning:\n\nHow to write in Markdown\nHow to build a site with Quarto\nHow to use AI tools (Cursor, Copilot) without letting them do all the thinking\nOptional later: rebuild this site with Hugo for a portfolio-style blog\n\nRead my journal →"
+  },
+  {
+    "objectID": "index.html#what-im-building",
+    "href": "index.html#what-im-building",
+    "title": "Jiahe Yu",
+    "section": "What I’m building",
+    "text": "What I’m building\nA journal of my summer projects, experiments, and things I ship."
+  },
+  {
+    "objectID": "index.html#quick-links",
+    "href": "index.html#quick-links",
+    "title": "Jiahe Yu",
+    "section": "Quick links",
+    "text": "Quick links\n\nAbout me\nFirst journal entry\nFamily repo on GitHub"
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Code Breaker",
+    "section": "",
+    "text": "Guess the secret code without being told which digits you got right. You have 10 attempts.\n\n\nYour guess   Check guess\n\n\nYou have 10 attempts.\n\n\n\n\n\nGuess\n\n\nRight position\n\n\nWrong position\n\n\n\n\n\n\n\nNew game"
+  },
+  {
+    "objectID": "project.html#crack-the-four-digit-code",
+    "href": "project.html#crack-the-four-digit-code",
+    "title": "Code Breaker",
+    "section": "",
+    "text": "Guess the secret code without being told which digits you got right. You have 10 attempts.\n\n\nYour guess   Check guess\n\n\nYou have 10 attempts.\n\n\n\n\n\nGuess\n\n\nRight position\n\n\nWrong position\n\n\n\n\n\n\n\nNew game"
+  },
+  {
+    "objectID": "journal/2026-08-27-T.T.html",
+    "href": "journal/2026-08-27-T.T.html",
+    "title": "I hate u",
+    "section": "",
+    "text": "I don’t want to do this. I don’t want to write this. I don’t want to be here. I don’t want to be alive. I don’t want to be me. I don’t want to be human. I don’t want to be anything. I just want to sleep. Jk I like myself. I like being alive. I like being human. I like being me. I just want to sleep. :p"
+  },
+  {
+    "objectID": "journal/2026-08-27-T.T.html#i-wanna-sleep",
+    "href": "journal/2026-08-27-T.T.html#i-wanna-sleep",
+    "title": "I hate u",
+    "section": "",
+    "text": "I don’t want to do this. I don’t want to write this. I don’t want to be here. I don’t want to be alive. I don’t want to be me. I don’t want to be human. I don’t want to be anything. I just want to sleep. Jk I like myself. I like being alive. I like being human. I like being me. I just want to sleep. :p"
+  },
+  {
+    "objectID": "journal/2026-08-27-T.T.html#i-have-no-idea-what-to-write",
+    "href": "journal/2026-08-27-T.T.html#i-have-no-idea-what-to-write",
+    "title": "I hate u",
+    "section": "I have no idea what to write",
+    "text": "I have no idea what to write\nI donteu understandeu anythingeu. No understand. No no. No understanding"
+  },
+  {
+    "objectID": "journal/2026-08-27-T.T.html#no-understand",
+    "href": "journal/2026-08-27-T.T.html#no-understand",
+    "title": "I hate u",
+    "section": "NO UNDERSTAND",
+    "text": "NO UNDERSTAND\npython in da jupyter lab, blender donut lol, very ugly, i talented, very smart, very good, very nice, very cool, very awesome, very amazing, very incredible, very fantastic, very wonderful, very excellent, very superb, very outstanding, very remarkable, very extraordinary, very exceptional, very phenomenal, very magnificent, very splendid, very glorious, very brilliant, very dazzling, very radiant, very luminous, very shining, very gleaming. I am a genius"
+  },
+  {
+    "objectID": "journal/index.html",
+    "href": "journal/index.html",
+    "title": "Journal",
+    "section": "",
+    "text": "Journal\nSummer learning log — one entry at a time.\nAdd new entries as .qmd files in this folder. They show up here automatically.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfunky\n\n\nstill unnecessary\n\n\n\n\n\nAug 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nI hate u\n\n\nunnecessary\n\n\n\n\n\nAug 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nProject kickoff\n\n\nFirst day of the family AI summer project\n\n\n\n\n\nAug 19, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "sites/jiahe-yu/journal/2026-08-27-T.T.html",

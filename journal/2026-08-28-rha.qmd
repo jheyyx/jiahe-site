@@ -1,0 +1,29 @@
+---
+title: "funky"
+date: 2026-08-28
+description: "still unnecessary"
+---
+
+## website
+I download vs code. vs code is used to write markdown. I also download the Quarto extension for vs code. Quarto is used to render markdown into a website. I also download the GitHub extension for vs code. GitHub is used to store my website and make it public. my website quarto website project is called "jiahe-site". The GitHub pages extension is used to deploy my website to GitHub pages. I use github actions to publish my website. 
+
+## today
+i plan to make game hehe. mini game sry. i collaborate with copilot agent. but copilot do all the work. i just tell copilot what to do. but i actually don't do anything. 
+I dont know what game.
+
+copilot give me suggest
+1. **Donut Catcher**  
+   Move a plate left and right to catch falling donuts. Miss three and the game ends. Add faster falling speed and a high-score counter.
+
+2. **Code Breaker**  
+   Guess a secret four-digit code. The game tells you how many digits are correct and in the right position, like *Mastermind*.
+
+3. **Bike Trail Dash**  
+   Control a cyclist, avoid rocks, collect water bottles, and survive as long as possible. The score increases with distance.
+
+4. **Memory Flip**  
+   Flip cards to match pairs of icons, such as bikes, books, laptops, and donuts. Add a timer and a move counter.
+
+5. **Build-a-Website Puzzle**  
+   Click items in the correct order: write Markdown, add CSS, render with Quarto, then deploy with GitHub Actions. Wrong choices reset the level.
+

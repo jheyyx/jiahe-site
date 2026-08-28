@@ -4,6 +4,7 @@ project:
   render:
     - index.qmd
     - about.qmd
+    - project.qmd
     - journal/**/*.qmd
 website:
   title: "Jiahe Yu"
@@ -15,6 +16,8 @@ website:
         text: Home
       - href: about.qmd
         text: About
+      - href: project.qmd
+        text: Project
       - href: journal/index.qmd
         text: Journal
     right:

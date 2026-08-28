@@ -1,0 +1,130 @@
+---
+title: "Code Breaker"
+description: "A Mastermind-inspired number guessing game"
+page-layout: full
+---
+
+## Crack the four-digit code
+
+Guess the secret code without being told which digits you got right. You have 10 attempts.
+
+::: {.code-breaker}
+<form id="code-breaker-form" class="code-breaker-form">
+  <label for="code-guess">Your guess
+    <input id="code-guess" name="guess" type="text" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="0000" autocomplete="off" required>
+  </label>
+  <button class="btn btn-primary" type="submit">Check guess</button>
+</form>
+
+<p id="code-breaker-status" class="code-breaker-status" role="status" aria-live="polite">You have 10 attempts.</p>
+
+<table class="code-breaker-table">
+  <thead>
+    <tr>
+      <th scope="col">Guess</th>
+      <th scope="col">Right position</th>
+      <th scope="col">Wrong position</th>
+    </tr>
+  </thead>
+  <tbody id="code-breaker-history"></tbody>
+</table>
+
+<button id="code-breaker-new-game" class="btn btn-outline-light code-breaker-new-game" type="button">New game</button>
+:::
+
+<script>
+(() => {
+  const form = document.querySelector("#code-breaker-form");
+  const input = document.querySelector("#code-guess");
+  const status = document.querySelector("#code-breaker-status");
+  const history = document.querySelector("#code-breaker-history");
+  const newGame = document.querySelector("#code-breaker-new-game");
+  const maxAttempts = 10;
+  let secretCode;
+  let attempts;
+  let gameOver;
+
+  function makeCode() {
+    return Array.from({ length: 4 }, () => Math.floor(Math.random() * 10)).join("");
+  }
+
+  function scoreGuess(guess) {
+    let rightPosition = 0;
+    const remainingSecret = [];
+    const remainingGuess = [];
+
+    for (let index = 0; index < secretCode.length; index += 1) {
+      if (guess[index] === secretCode[index]) {
+        rightPosition += 1;
+      } else {
+        remainingSecret.push(secretCode[index]);
+        remainingGuess.push(guess[index]);
+      }
+    }
+
+    const secretCounts = {};
+    const guessCounts = {};
+    remainingSecret.forEach((digit) => {
+      secretCounts[digit] = (secretCounts[digit] || 0) + 1;
+    });
+    remainingGuess.forEach((digit) => {
+      guessCounts[digit] = (guessCounts[digit] || 0) + 1;
+    });
+
+    const wrongPosition = Object.keys(guessCounts).reduce(
+      (total, digit) => total + Math.min(guessCounts[digit] || 0, secretCounts[digit] || 0),
+      0
+    );
+
+    return { rightPosition, wrongPosition };
+  }
+
+  function startGame() {
+    secretCode = makeCode();
+    attempts = 0;
+    gameOver = false;
+    history.replaceChildren();
+    status.textContent = `You have ${maxAttempts} attempts.`;
+    input.disabled = false;
+    form.querySelector("button").disabled = false;
+    input.value = "";
+    input.focus();
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (gameOver) return;
+
+    const guess = input.value;
+    if (!/^\d{4}$/.test(guess)) {
+      status.textContent = "Enter exactly four digits.";
+      input.focus();
+      return;
+    }
+
+    attempts += 1;
+    const score = scoreGuess(guess);
+    const row = document.createElement("tr");
+    row.innerHTML = `<td>${guess}</td><td>${score.rightPosition}</td><td>${score.wrongPosition}</td>`;
+    history.prepend(row);
+
+    if (score.rightPosition === 4) {
+      status.textContent = `You cracked the code in ${attempts} ${attempts === 1 ? "attempt" : "attempts"}!`;
+      gameOver = true;
+    } else if (attempts === maxAttempts) {
+      status.textContent = `Game over. The code was ${secretCode}. Start a new game to try again.`;
+      gameOver = true;
+    } else {
+      const remaining = maxAttempts - attempts;
+      status.textContent = `${score.rightPosition} digit${score.rightPosition === 1 ? "" : "s"} in the right position, ${score.wrongPosition} in the wrong position. ${remaining} attempts left.`;
+    }
+
+    input.value = "";
+    input.disabled = gameOver;
+    form.querySelector("button").disabled = gameOver;
+  });
+
+  newGame.addEventListener("click", startGame);
+  startGame();
+})();
+</script>

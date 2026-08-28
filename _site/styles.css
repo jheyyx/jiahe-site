@@ -9,3 +9,57 @@ blockquote {
   padding-left: 1rem;
   color: var(--bs-secondary);
 }
+
+.code-breaker {
+  max-width: 42rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.code-breaker-form {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.code-breaker-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.code-breaker-form input {
+  width: 9rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.35rem;
+  text-align: center;
+}
+
+.code-breaker-status {
+  min-height: 1.5rem;
+  margin: 1rem 0;
+}
+
+.code-breaker-table {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.code-breaker-table th,
+.code-breaker-table td {
+  padding: 0.65rem;
+  text-align: center;
+}
+
+.code-breaker-table tbody tr + tr {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.code-breaker-new-game {
+  margin-top: 1rem;
+}

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-08-19">
+<meta name="description" content="A Mastermind-inspired number guessing game">
 
-<title>Day zero — let’s go – Jiahe Yu</title>
+<title>Code Breaker – Jiahe Yu</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -30,23 +30,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../../">
-<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-3b3a1b88915a572f254f0096915d5cc9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3b3a1b88915a572f254f0096915d5cc9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Jiahe Yu</span>
     </a>
   </div>
@@ -97,21 +97,25 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../journal/index.html"> 
+    <a class="nav-link active" href="./project.html" aria-current="page"> 
+<span class="menu-text">Project</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./journal/index.html"> 
 <span class="menu-text">Journal</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/Zhenglei-BCS/family-ai-summer-2026"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/jheyyx/jiahe-site/"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -123,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -131,34 +135,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#day-zero-lets-go" id="toc-day-zero-lets-go" class="nav-link active" data-scroll-target="#day-zero-lets-go">Day zero — let’s go</a>
-  <ul class="collapse">
-  <li><a href="#what-i-did" id="toc-what-i-did" class="nav-link" data-scroll-target="#what-i-did">What I did</a></li>
-  <li><a href="#what-i-learned" id="toc-what-i-learned" class="nav-link" data-scroll-target="#what-i-learned">What I learned</a></li>
-  <li><a href="#next" id="toc-next" class="nav-link" data-scroll-target="#next">Next</a></li>
-  </ul></li>
+  <li><a href="#crack-the-four-digit-code" id="toc-crack-the-four-digit-code" class="nav-link active" data-scroll-target="#crack-the-four-digit-code">Crack the four-digit code</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Day zero — let’s go</h1>
+<h1 class="title">Code Breaker</h1>
+</div>
+
+<div>
+  <div class="description">
+    A Mastermind-inspired number guessing game
+  </div>
 </div>
 
 
-
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 19, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -168,22 +166,135 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="day-zero-lets-go" class="level1">
-<h1>Day zero — let’s go</h1>
-<section id="what-i-did" class="level2">
-<h2 class="anchored" data-anchor-id="what-i-did">What I did</h2>
-<p>Got my own folder in the family repo.</p>
-</section>
-<section id="what-i-learned" class="level2">
-<h2 class="anchored" data-anchor-id="what-i-learned">What I learned</h2>
-<p>Git tracks every version — I can experiment without fear.</p>
-</section>
-<section id="next" class="level2">
-<h2 class="anchored" data-anchor-id="next">Next</h2>
-<p>Fill in About me and pick a project from PROJECT-IDEAS.md.</p>
+<section id="crack-the-four-digit-code" class="level2">
+<h2 class="anchored" data-anchor-id="crack-the-four-digit-code">Crack the four-digit code</h2>
+<p>Guess the secret code without being told which digits you got right. You have 10 attempts.</p>
+<div class="code-breaker">
+<form id="code-breaker-form" class="code-breaker-form">
+<label for="code-guess">Your guess <input id="code-guess" name="guess" type="text" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="0000" autocomplete="off" required=""> </label> <button class="btn btn-primary" type="submit">Check guess</button>
+</form>
+<p id="code-breaker-status" class="code-breaker-status" role="status" aria-live="polite">
+You have 10 attempts.
+</p>
+<table class="code-breaker-table">
+<thead>
+<tr>
+<th scope="col">
+Guess
+</th>
+<th scope="col">
+Right position
+</th>
+<th scope="col">
+Wrong position
+</th>
+</tr>
+</thead>
+<tbody id="code-breaker-history">
+</tbody>
+</table>
+<button id="code-breaker-new-game" class="btn btn-outline-light code-breaker-new-game" type="button">
+New game
+</button>
+</div>
+<script>
+(() => {
+  const form = document.querySelector("#code-breaker-form");
+  const input = document.querySelector("#code-guess");
+  const status = document.querySelector("#code-breaker-status");
+  const history = document.querySelector("#code-breaker-history");
+  const newGame = document.querySelector("#code-breaker-new-game");
+  const maxAttempts = 10;
+  let secretCode;
+  let attempts;
+  let gameOver;
+
+  function makeCode() {
+    return Array.from({ length: 4 }, () => Math.floor(Math.random() * 10)).join("");
+  }
+
+  function scoreGuess(guess) {
+    let rightPosition = 0;
+    const remainingSecret = [];
+    const remainingGuess = [];
+
+    for (let index = 0; index < secretCode.length; index += 1) {
+      if (guess[index] === secretCode[index]) {
+        rightPosition += 1;
+      } else {
+        remainingSecret.push(secretCode[index]);
+        remainingGuess.push(guess[index]);
+      }
+    }
+
+    const secretCounts = {};
+    const guessCounts = {};
+    remainingSecret.forEach((digit) => {
+      secretCounts[digit] = (secretCounts[digit] || 0) + 1;
+    });
+    remainingGuess.forEach((digit) => {
+      guessCounts[digit] = (guessCounts[digit] || 0) + 1;
+    });
+
+    const wrongPosition = Object.keys(guessCounts).reduce(
+      (total, digit) => total + Math.min(guessCounts[digit] || 0, secretCounts[digit] || 0),
+      0
+    );
+
+    return { rightPosition, wrongPosition };
+  }
+
+  function startGame() {
+    secretCode = makeCode();
+    attempts = 0;
+    gameOver = false;
+    history.replaceChildren();
+    status.textContent = `You have ${maxAttempts} attempts.`;
+    input.disabled = false;
+    form.querySelector("button").disabled = false;
+    input.value = "";
+    input.focus();
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (gameOver) return;
+
+    const guess = input.value;
+    if (!/^\d{4}$/.test(guess)) {
+      status.textContent = "Enter exactly four digits.";
+      input.focus();
+      return;
+    }
+
+    attempts += 1;
+    const score = scoreGuess(guess);
+    const row = document.createElement("tr");
+    row.innerHTML = `<td>${guess}</td><td>${score.rightPosition}</td><td>${score.wrongPosition}</td>`;
+    history.prepend(row);
+
+    if (score.rightPosition === 4) {
+      status.textContent = `You cracked the code in ${attempts} ${attempts === 1 ? "attempt" : "attempts"}!`;
+      gameOver = true;
+    } else if (attempts === maxAttempts) {
+      status.textContent = `Game over. The code was ${secretCode}. Start a new game to try again.`;
+      gameOver = true;
+    } else {
+      const remaining = maxAttempts - attempts;
+      status.textContent = `${score.rightPosition} digit${score.rightPosition === 1 ? "" : "s"} in the right position, ${score.wrongPosition} in the wrong position. ${remaining} attempts left.`;
+    }
+
+    input.value = "";
+    input.disabled = gameOver;
+    form.querySelector("button").disabled = gameOver;
+  });
+
+  newGame.addEventListener("click", startGame);
+  startGame();
+})();
+</script>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -260,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/YOUR-USERNAME\.github\.io\/jiahe-site\/");
+        var filterRegex = new RegExp("https:\/\/jheyyx\.github\.io\/jiahe-site\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
