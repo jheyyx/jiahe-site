@@ -1,14 +1,45 @@
 ---
-title: "Code Breaker"
-description: "A Mastermind-inspired number guessing game"
+title: "Projects"
+description: "Experiments, games, and things I am building"
 page-layout: full
 ---
 
-## Crack the four-digit code
+## Things I am building
 
-Guess the secret code without being told which digits you got right. You have 10 attempts.
+::: {.project-gallery}
+<button class="project-card" id="code-breaker-card" type="button" aria-haspopup="dialog" aria-controls="code-breaker-dialog">
+  <span class="project-card-mark" aria-hidden="true">04</span>
+  <span class="project-card-content">
+    <span class="project-card-kicker">Mini game</span>
+    <span class="project-card-title">Code Breaker</span>
+    <span class="project-card-description">Crack a secret four-digit code using logic, guesses, and a little patience.</span>
+    <span class="project-card-action">Open game <span aria-hidden="true">-&gt;</span></span>
+  </span>
+</button>
 
-::: {.code-breaker}
+<article class="project-card project-card-coming-soon">
+  <span class="project-card-mark" aria-hidden="true">02</span>
+  <span class="project-card-content">
+    <span class="project-card-kicker">Coming soon</span>
+    <span class="project-card-title">Next experiment</span>
+    <span class="project-card-description">A new project will appear here when I figure out what to build next.</span>
+  </span>
+</article>
+:::
+
+```{=html}
+<dialog id="code-breaker-dialog" class="code-breaker-dialog" aria-labelledby="code-breaker-title">
+<div class="code-breaker-dialog-header">
+  <div>
+    <span class="project-card-kicker">Mini game</span>
+    <span id="code-breaker-title" class="code-breaker-title">Code Breaker</span>
+  </div>
+  <button id="code-breaker-close" class="code-breaker-close" type="button" aria-label="Close Code Breaker">X</button>
+</div>
+
+<p>Guess the secret code without being told which digits you got right. You have 10 attempts.</p>
+
+<div class="code-breaker">
 <form id="code-breaker-form" class="code-breaker-form">
   <label for="code-guess">Your guess
     <input id="code-guess" name="guess" type="text" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="0000" autocomplete="off" required>
@@ -30,10 +61,15 @@ Guess the secret code without being told which digits you got right. You have 10
 </table>
 
 <button id="code-breaker-new-game" class="btn btn-outline-light code-breaker-new-game" type="button">New game</button>
-:::
+ </div>
+</dialog>
+```
 
 <script>
 (() => {
+  const card = document.querySelector("#code-breaker-card");
+  const dialog = document.querySelector("#code-breaker-dialog");
+  const close = document.querySelector("#code-breaker-close");
   const form = document.querySelector("#code-breaker-form");
   const input = document.querySelector("#code-guess");
   const status = document.querySelector("#code-breaker-status");
@@ -88,8 +124,19 @@ Guess the secret code without being told which digits you got right. You have 10
     input.disabled = false;
     form.querySelector("button").disabled = false;
     input.value = "";
-    input.focus();
+    if (dialog.open) input.focus();
   }
+
+  card.addEventListener("click", () => {
+    dialog.showModal();
+    startGame();
+  });
+
+  close.addEventListener("click", () => dialog.close());
+
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) dialog.close();
+  });
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();

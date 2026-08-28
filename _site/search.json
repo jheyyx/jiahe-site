@@ -163,9 +163,9 @@
   {
     "objectID": "project.html",
     "href": "project.html",
-    "title": "Code Breaker",
+    "title": "Projects",
     "section": "",
-    "text": "Guess the secret code without being told which digits you got right. You have 10 attempts.\n\n\nYour guess   Check guess\n\n\nYou have 10 attempts.\n\n\n\n\n\nGuess\n\n\nRight position\n\n\nWrong position\n\n\n\n\n\n\n\nNew game"
+    "text": "04  Mini game Code Breaker Crack a secret four-digit code using logic, guesses, and a little patience. Open game -&gt; \n\n\n02  Coming soon Next experiment A new project will appear here when I figure out what to build next. \n\n\n\n\n  \n    Mini game\n    Code Breaker\n  \n  X\n\n\nGuess the secret code without being told which digits you got right. You have 10 attempts.\n\n\n\n  Your guess\n    \n  \n  Check guess\n\n\nYou have 10 attempts.\n\n\n\n\n\nGuess\nRight position\nWrong position\n\n\n\n\n\n\n\nNew game"
   },
   {
     "objectID": "project.html#crack-the-four-digit-code",
@@ -236,5 +236,12 @@
     "title": "I hate u",
     "section": "NO UNDERSTAND",
     "text": "NO UNDERSTAND\npython in da jupyter lab, blender donut lol, very ugly, i talented, very smart, very good, very nice, very cool, very awesome, very amazing, very incredible, very fantastic, very wonderful, very excellent, very superb, very outstanding, very remarkable, very extraordinary, very exceptional, very phenomenal, very magnificent, very splendid, very glorious, very brilliant, very dazzling, very radiant, very luminous, very shining, very gleaming. I am a genius"
+  },
+  {
+    "objectID": "project.html#things-i-am-building",
+    "href": "project.html#things-i-am-building",
+    "title": "Projects",
+    "section": "",
+    "text": "04  Mini game Code Breaker Crack a secret four-digit code using logic, guesses, and a little patience. Open game -&gt; \n\n\n02  Coming soon Next experiment A new project will appear here when I figure out what to build next. \n\n\n\n\n  \n    Mini game\n    Code Breaker\n  \n  X\n\n\nGuess the secret code without being told which digits you got right. You have 10 attempts.\n\n\n\n  Your guess\n    \n  \n  Check guess\n\n\nYou have 10 attempts.\n\n\n\n\n\nGuess\nRight position\nWrong position\n\n\n\n\n\n\n\nNew game"
   }
 ]

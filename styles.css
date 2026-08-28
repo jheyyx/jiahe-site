@@ -10,9 +10,130 @@ blockquote {
   color: var(--bs-secondary);
 }
 
-.code-breaker {
-  max-width: 42rem;
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.25rem;
+  max-width: 58rem;
   margin: 2rem 0;
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  min-height: 16rem;
+  width: 100%;
+  padding: 1.5rem;
+  overflow: hidden;
+  color: inherit;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  background: linear-gradient(145deg, rgba(20, 184, 166, 0.28), rgba(0, 0, 0, 0.28));
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+button.project-card {
+  cursor: pointer;
+  font: inherit;
+}
+
+button.project-card:hover,
+button.project-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: var(--bs-info);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.24);
+}
+
+.project-card-mark {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  color: rgba(255, 255, 255, 0.24);
+  font-size: 3.75rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.project-card-content {
+  display: flex;
+  align-self: end;
+  flex-direction: column;
+  gap: 0.65rem;
+  position: relative;
+  z-index: 1;
+}
+
+.project-card-kicker {
+  margin: 0;
+  color: var(--bs-info);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-card-title {
+  font-size: 1.65rem;
+  font-weight: 700;
+}
+
+.project-card-description {
+  max-width: 25rem;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.project-card-action {
+  color: var(--bs-info);
+  font-weight: 700;
+}
+
+.project-card-coming-soon {
+  background: linear-gradient(145deg, rgba(255, 193, 7, 0.18), rgba(0, 0, 0, 0.28));
+}
+
+.code-breaker-dialog {
+  width: min(42rem, calc(100% - 2rem));
+  max-height: calc(100% - 2rem);
+  padding: 1.5rem;
+  overflow: auto;
+  color: var(--bs-body-color);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  background: var(--bs-dark);
+}
+
+.code-breaker-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.code-breaker-dialog-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.code-breaker-title {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.code-breaker-close {
+  padding: 0.1rem 0.55rem;
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  background: transparent;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  cursor: pointer;
+}
+
+.code-breaker {
+  margin: 1.5rem 0 0;
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 8px;
@@ -62,4 +183,14 @@ blockquote {
 
 .code-breaker-new-game {
   margin-top: 1rem;
+}
+
+@media (max-width: 30rem) {
+  .project-card {
+    min-height: 14rem;
+  }
+
+  .code-breaker-dialog {
+    padding: 1rem;
+  }
 }
